@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oleo+Script+Swash+Caps&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#container {
+  background-image: url('https://images.pexels.com/photos/7693958/pexels-photo-7693958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-page {
+  background-color: white;
+  text-align: center;
+  padding: 40px 0 10px 0;
+  position: fixed;
+  opacity: 0.8;
+  width: 50%;
+  height: 20%;
+  margin-top: 250px;
+  margin-left: 25%;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 25px;
+  line-height: 70px;
+  border-radius: 10px;
+}
+
+.welcome-text {
+    padding-bottom: 10px;
+}
+
+.order-text {
+    background-color: white;
+    width: 50%;
+    border-radius: 10px;
+}
+
+h3 {
+    background-color: beige;
+    position: fixed;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+#logo-name {
+  text-align: center;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 60px;
+}
+
+nav {
+    position: fixed;
+    margin-top: 120px;
+    margin-left: 43%;
+}
+
+button {
+    border: none;
+    background-color: beige;
+    cursor: pointer;
+    margin-right: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: large;
+}
+
+button:hover {
+    color: hotpink;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: beige;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#footer a {
+  color: black;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: hotpink;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+
+/* contact section */
+
+#contact-info {
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    opacity: 0.7;
+    margin-top: 230px;
+    margin-left: 42%;
+    padding: 30px 80px 50px 80px;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  
+  #contact-info {
+    margin-top: 150px;
+  } 
+
+
