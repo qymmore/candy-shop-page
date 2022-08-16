@@ -1,3 +1,3 @@
 # candy-shop-page
 
-## Live demo: 
+## Live demo: https://qymmore.github.io/candy-shop-page/
