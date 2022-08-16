@@ -37,6 +37,16 @@ function shopContent() {
     gridSix.innerText = "Pom Pickled";
     gridContainer.appendChild(gridSix);
 
+    const gridSeven = document.createElement('div');
+    gridSeven.setAttribute('class', 'grid-seven');
+    gridSeven.innerText = "Strawberry sorbet";
+    gridContainer.appendChild(gridSeven);
+
+    const gridEight = document.createElement('div');
+    gridEight.setAttribute('class', 'grid-eight');
+    gridEight.innerText = "Chocolate maple";
+    gridContainer.appendChild(gridEight);
+
     return shopBackground;
 }
 

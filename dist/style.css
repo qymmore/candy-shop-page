@@ -115,10 +115,10 @@ button:hover {
   position: absolute;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   row-gap: 50px;
   column-gap: 80px;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: 27%;
 }
 
@@ -127,7 +127,9 @@ button:hover {
 .grid-three, 
 .grid-four, 
 .grid-five, 
-.grid-six {
+.grid-six,
+.grid-seven,
+.grid-eight {
   background-color: white;
   padding: 10px 20px;
   border-radius: 10px;
