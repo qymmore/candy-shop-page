@@ -1,17 +1,17 @@
 import populateSkeleton from './skeleton';
 import populateHome from './home';
+import populateShop from './shop';
 import populateContact from './contact';
 
 init();
 
 function clickNavBar() {
     const homeTab = document.getElementById('home');
-    const menuTab = document.getElementById('menu');
+    const shopTab = document.getElementById('shop');
     const contactTab = document.getElementById('contact');
-
-    const menuButton = document.querySelector('.menu-button');
     
     homeTab.addEventListener('click', populateHome);
+    shopTab.addEventListener('click', populateShop);
     contactTab.addEventListener('click', populateContact);
 };
 

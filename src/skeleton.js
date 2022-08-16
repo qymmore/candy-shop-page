@@ -33,11 +33,11 @@ function createNavBar(id) {
   nav.setAttribute('id', id);
 
   const home = createTab('home', 'Home');
-  const menu = createTab('menu', 'Menu');
+  const shop = createTab('shop', 'Shop');
   const contact = createTab('contact', 'Contact');
 
   nav.appendChild(home);
-  nav.appendChild(menu);
+  nav.appendChild(shop);
   nav.appendChild(contact);
 
   return nav;

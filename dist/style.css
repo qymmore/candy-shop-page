@@ -101,6 +101,44 @@ button:hover {
   color: darkmagenta;
 }
 
+/* shop section */
+
+#shop-background {
+  background-image: url('https://images.pexels.com/photos/5469042/pexels-photo-5469042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 60%;
+  opacity: 0.8;
+}
+
+.grid-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 50px;
+  column-gap: 80px;
+  margin-top: 10%;
+  margin-left: 27%;
+}
+
+.grid-one, 
+.grid-two, 
+.grid-three, 
+.grid-four, 
+.grid-five, 
+.grid-six {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 30px;
+  text-align: center;
+  opacity: 0.9;
+}
+
+
+
 
 /* contact section */
 
