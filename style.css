@@ -1,94 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap');
 
 * {
   margin: 0;
   padding: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
-#container {
-  background-image: url('https://images.pexels.com/photos/7693958/pexels-photo-7693958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.landing-page {
-  background-color: white;
-  text-align: center;
-  padding: 40px 0 10px 0;
-  position: fixed;
-  opacity: 0.8;
-  width: 50%;
-  height: 20%;
-  margin-top: 250px;
-  margin-left: 25%;
-  font-family: 'Oleo Script Swash Caps', cursive;
-  font-size: 25px;
-  line-height: 70px;
-  border-radius: 10px;
-}
-
-.welcome-text {
-    padding-bottom: 10px;
-}
-
-.order-text {
-    background-color: white;
-    width: 50%;
-    border-radius: 10px;
-}
+/* header elements */
 
 h3 {
-    background-color: beige;
-    position: fixed;
+    background-color: lightpink;
+    position: relative;
     padding-bottom: 80px;
+    padding-top: 20px;
     width: 100%;
 }
 
 #logo-name {
   text-align: center;
   font-family: 'Oleo Script Swash Caps', cursive;
-  font-size: 60px;
+  font-size: 50px;
+  color: white;
 }
 
+/* navigation bar */
+
 nav {
-    position: fixed;
-    margin-top: 120px;
+    position: relative;
+    margin-top: -60px;
     margin-left: 43%;
+    padding-bottom: 20px;
 }
 
 button {
     border: none;
-    background-color: beige;
+    background-color: lightpink;
+    color: white;
     cursor: pointer;
     margin-right: 20px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: large;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
 }
 
 button:hover {
     color: hotpink;
 }
 
+/* homepage contents */
+
+.landing-page {
+    text-align: center;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 25px;
+    line-height: 70px;
+    display: flex;
+  } 
+
+.image-one {
+  width: 33.33%;
+  padding-bottom: 60%;
+  background-position: center;
+  background-image: url('https://images.pexels.com/photos/4202952/pexels-photo-4202952.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.image-two {
+  width: 33.33%;
+  padding-bottom: 60%;
+  background-position: center;
+  background-image: url('https://images.pexels.com/photos/1375807/pexels-photo-1375807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.image-three {
+  width: 33.33%;
+  padding-bottom: 60%;
+  background-position: center;
+  background-image: url('https://images.pexels.com/photos/6932895/pexels-photo-6932895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.home-section {
+  background-color: white;
+  position: absolute;
+  font-size: 60px;
+  margin-left: 20%;
+  margin-top: 15%;
+  padding: 40px 80px 40px 80px;
+  border-radius: 20px;
+  opacity: 0.9;
+}
+
+.home-section>.p2 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 40px;
+}
+
+.home-section>.p3 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  font-style: italic;
+  color: darkmagenta;
+}
+
+
+/* contact section */
+
+#contact-info {
+  background-image: url('https://images.pexels.com/photos/1906435/pexels-photo-1906435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 60%;
+};
+
+.contact-container {
+  background-color: white;
+}
+
+.address-block {
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+  width: 30%;
+  opacity: 0.8;
+  margin-left: 28%;
+  margin-top: 200px;
+  padding: 60px 100px;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 30px;
+}
+
+.phone-block, .email-block {
+  margin-top: 20px;
+}
+
+
+/* footer element */
+
 #footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: beige;
+  background-color: lightpink;
+  color: white;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 10px;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: larger;
 }
 
 #footer a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -97,23 +161,6 @@ button:hover {
   text-decoration: underline;
   text-underline-offset: 6px;
 }
-
-
-/* contact section */
-
-#contact-info {
-    background-color: white;
-    position: fixed;
-    z-index: 1;
-    opacity: 0.7;
-    margin-top: 230px;
-    margin-left: 42%;
-    padding: 30px 80px 50px 80px;
-    font-family: 'Noto Sans JP', sans-serif;
-  }
   
-  #contact-info {
-    margin-top: 150px;
-  } 
 
 
