@@ -1,23 +1,31 @@
 //create contact elements
 
-function createContact(name, data) {
+function createContact() {
 
-    const contactInfo = document.createElement('section');
-    contactInfo.setAttribute('id', 'contact-info');
+    const contactSection = document.createElement('section');
+    contactSection.setAttribute('id', 'contact-info');
 
-    const title = document.createElement('h2');
-    title.textContent = name;
-    title.setAttribute('class', 'contact-type');
-    contactInfo.appendChild(title);
+    const contactContainer = document.createElement('div');
+    contactContainer.setAttribute('class', 'contact-container');
 
-    data.forEach((d) => {
-        const p = document.createElement('p');
-        p.setAttribute('class', 'contact-description');
-        p.textContent = d;
-        contactInfo.appendChild(p);
-    });
+    const addressBlock = document.createElement('p');
+    addressBlock.setAttribute('class', 'address-block');
+    addressBlock.innerText = 'Address: ABC St, Toronto ON';
+    contactContainer.appendChild(addressBlock);
 
-    return contactInfo;
+    const phoneBlock = document.createElement('p');
+    phoneBlock.setAttribute('class', 'phone-block');
+    phoneBlock.innerText = "Phone: 123-456-789";
+    addressBlock.appendChild(phoneBlock);
+
+    const emailBlock = document.createElement('p');
+    emailBlock.setAttribute('class', 'email-block');
+    emailBlock.innerText = "Email: abc.xyz@email.com";
+    addressBlock.appendChild(emailBlock);
+
+    contactSection.appendChild(contactContainer);
+
+    return contactSection;
 };
 
 export default function populateContact() {
@@ -26,13 +34,8 @@ export default function populateContact() {
 
     content.textContent = '';
 
-    const phoneSection = createContact('Phone', ['123-456-789']);
-    phoneSection.setAttribute('class','phone-number');
+    const contactInfo = createContact();
 
-    const addressSection = createContact('Address', ['ABC 123 Dr, ON Canada']);
-    addressSection.setAttribute('class','address-book');
-
-    content.appendChild(phoneSection);
-    content.appendChild(addressSection);
+    content.appendChild(contactInfo);
   };
 

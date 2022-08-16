@@ -68,7 +68,7 @@ export default function populateSkeleton() {
 
   const container = document.getElementById('container');
 
-  const header = populateHeader('logo-name', 'The Carbonaut');
+  const header = populateHeader('logo-name', 'Star Candy Shop');
   container.appendChild(header);
 
   const nav = createNavBar('nav');
