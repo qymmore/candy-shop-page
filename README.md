@@ -1,1 +1,1 @@
-# restaurant-page
+# candy-shop-page
